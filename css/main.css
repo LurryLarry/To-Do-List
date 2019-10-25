@@ -10,13 +10,40 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
+h2 {
+  text-align: center;
+}
 html {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  margin-top: 50px;
   color: #222;
   font-size: 1em;
   line-height: 1.4;
 }
+#filter {
+  margin-bottom: 5px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
 
+li {
+  list-style-type:none;
+}
+#task {
+  margin-bottom: 10px;
+}
+
+
+#main {
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-style: solid;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
