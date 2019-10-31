@@ -1,4 +1,4 @@
-/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/
 
 /* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
@@ -10,17 +10,22 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-h2 {
+h3 {
+  font-size: 3vw;
   text-align: center;
 }
+::placeholder {
+  font-size: 15px;
+}
+
+#paaotsikko {
+
+}
 html {
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 100px;
-  margin-top: 50px;
+  
   color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+  
+
 }
 #filter {
   margin-bottom: 5px;
@@ -30,15 +35,31 @@ ul {
   padding: 0;
 }
 
-li {
-  list-style-type:none;
+/* li:nth-child( odd ) {
+  background-color: red;
+} */
+
+.btn {
+  display: block;
 }
-#task {
-  margin-bottom: 10px;
+input[type=checkbox]{
+  opacity: 1 !important;
+  text-align: center !important;
+  display: inline-block !important;
+  -webkit-appearance:checkbox;
+
 }
 
+input[type="text"] {
+  text-align: center;
+  color: black;
+  margin-bottom: 5px;
+  width: 300px;
+}
 
-#main {
+.main {
+  
+  margin: 0;
   text-align: center;
   margin-left: 200px;
   margin-right: 200px;
@@ -216,78 +237,5 @@ textarea {
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster */
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-  /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
-  }
-  pre {
-    white-space: pre-wrap !important;
-  }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-  /*
-     * Printing Tables:
-     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-  thead {
-    display: table-header-group;
-  }
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
 }
 
