@@ -37,7 +37,7 @@ function poistaYksi(e) { // luodaan funktio nimeltä poistaYksi ja laitetaan e p
   
   
   var kohde = e.target; // luodaan muuttuja kohde joka referoi klikattua tagia
-  console.log(tgt);
+  console.log(kohde);
   if (kohde.className === "fa fa-remove") { // jos klikatulla tagilla on x-ikonin classname
     
     kohde.closest('li').remove(); // etsitään lähin listankohta ja poistetaan se
